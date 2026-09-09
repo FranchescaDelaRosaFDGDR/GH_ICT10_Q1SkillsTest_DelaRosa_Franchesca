@@ -12,5 +12,5 @@ def getting_total(e):
     
     display(f"Subtotal: Php {subtotal}", target="result")
     display(f"Tax (12%): Php {vat}", target="result")
-    display(f"Total payment: Php {total}", target="result")
+    display(f"<b>Total payment:<b> Php {total}", target="result")
 
