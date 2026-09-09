@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Skills Test</title>
+</head>
+<body style="background-color: burlywood; color: black; font-size: 35px; padding: 3%; text-align: center;">
+    <h1>Receipt Generator</h1><br>
+    <label><b>Coffee Shop - Menu Items:</b></label><br>
+
+        <input type="radio" id="americano" class="menu-item" name="coffee" value="100">
+        <label for="coffee_americano">Americano --- Php 100</label><br>
+
+        <input type="radio" id="coldbrew_malt" class="menu-item" name="coffee" value="98">
+        <label for="coffee_coldbrew">Cold Brew Malt --- Php 98</label><br>
+
+        <input type="radio" id="coffee_caramel" class="menu-item" name="coffee" value="97">
+        <label for="coffee_caramel">Caramel Macchiato --- Php 97</label><br>
+
+        <input type="radio" id="spanish_latte" class="menu-item" name="coffee" value="99">
+        <label for="coffee_spanish">Spanish Latte --- Php 99</label><br>
+
+        <input type="radio" id="affogato" class="menu-item" name="coffee" value="96">
+        <label for="coffee_affogato">Affogato --- Php 96</label><br><br>
+
+        <input type="button" py-click="getting_total" value="Get total">
+
+    <h3>_________________________________________________</h3>
+    <h3>Receipt:</h3>
+
+    <div id="result" style="background-color: burlywood; color: black; font-size: 35px; padding: 3%; text-align: center;"></div>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
